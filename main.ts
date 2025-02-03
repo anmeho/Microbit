@@ -1,6 +1,18 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("Anne Mette")
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
 })
-basic.forever(function () {
-	
+input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #
+        `)
 })
